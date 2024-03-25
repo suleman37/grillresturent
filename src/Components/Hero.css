@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: "Times New Roman", Times, serif;
+}
+.container-fluid{
+    color: white;
+}
+/* NAVBAR */
+.flood{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.bg{
+    background-image: url(../images/hero-slider-2.jpg);
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 50px;
+}
+.nav{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+.nav ul li a{
+    color: white;
+}
+.m-btn{
+    background: rgba(156, 156, 156, 0.404);
+    float: inline-end;
+}
+/* HERO */
+.main-hero{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 105vh;
+}
+#btn2 {
+    color: rgba(214, 177, 10, 0.774);
+    border: 2px solid rgba(214, 177, 10, 0.774);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    animation-name: animate;
+    animation-duration: 4s;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+#main-2-head {
+    font-size: 65px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#main-head {
+    letter-spacing: 4px;
+}
+
+#seperator {
+    margin-top: -10px;
+    color: white;
+    background-position: center;
+}
+.mini-menu{
+    text-align: center;
+    height: auto;
+    background: #000;
+}
+.services img:hover {
+    cursor: pointer;
+    animation: shine 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+}
+/* OUR GREAT STORY */
+.second-bg{
+    display: flex;
+    align-items: center;
+    background: rgb(49, 49, 49);
+    height: auto;
+    width: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.num {
+    font-size: 25px;
+    border-bottom: 3px double gray;
+    color: rgba(214, 177, 10, 0.774);
+}
+#btn3{
+    background: transparent;
+    border: 2px solid rgba(214, 177, 10, 0.774);
+    color: rgba(214, 177, 10, 0.774);
+    padding: 10px 20px;
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+#btn3:hover{
+    cursor: pointer;
+    background: rgba(214, 177, 10, 0.774);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    color: white;
+}
+.hotel{
+    width: 400px;
+    margin-bottom: 60px;
+}
+#badgebg{
+    width: 100px;
+    position: absolute;
+    animation: mymove 5s infinite;
+}
+#bags{
+    width: 100px;
+}
+@keyframes mymove {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.special{
+    background: #000;
+    height: auto;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+/* SPECIAL DISH */
+.fourth-bg{
+    margin-top: -50px;
+    background: rgb(49, 49, 49);
+    height: auto;
+    width: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.foods{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+span{
+    color: rgba(214, 177, 10, 0.774);
+}
+/* CHEFS */
+.chefs{
+  margin-top: -50px;  
+  padding-bottom: 50px;
+}
+.inter img{
+    border-radius: 50%;
+}
+/* CONTACT US */
+.jaii{
+    background-image: url(../images/form-pattern.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+.contact{
+    height: 45px;
+    width: 350px;
+    background: transparent;
+    color: white;
+    border: 1px solid gray;
+}
+.contant{
+    height: 45px;
+    width: 350px;
+    background: transparent;
+    color: white;
+    border: 1px solid gray;
+}
+.callme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+option{
+    color: #000;
+}
+.vm a{
+    color:  rgba(214, 177, 10, 0.774);
+    text-decoration: none;
+}
+.navigation{
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gray;
+    overflow: hidden;
+  }
+.modal-container{
+    position: fixed;
+    background:  rgb(49, 49, 49);
+    width: 25rem;
+    padding: 20px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    overflow: hidden;
+}
+.manu{
+    float: right;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width : 490px) {
+    .contact{
+        height: 45px;
+        width: 250px;
+    }
+    .contant{
+        height: 45px;
+        width: 250px;
+    }
+    #main-2-head {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 390px) {
+    #main-2-head {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 1300px) {
+    .nav-up{
+        opacity: 0;
+    }
+    #bags{
+        width: 70px;
+    }
+    #badgebg{
+        width: 70px;
+        position: absolute;
+    }
+    .nav{
+        width: 80vw;
+    }
+    #main-2-head {
+        font-size: 65px;
+    }
+}
+@media screen and (max-width : 1703px) {
+    .nav{
+        width: 75vw;
+    }
+}
+@media screen and (max-width : 1375px) {
+    .nav{
+        width: 70vw;
+    }
+}
+@media screen and (max-width : 1150px) {
+    .nav{
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width : 993px) {
+    .nav{
+        display: block;
+    }
+    #main-2-head {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    #pic{
+        margin: 0px;
+    }
+    .ba-pic{
+        width: 100px;
+    }
+    .hotel{
+        width: 250px;
+        height: 450px;
+    }
+    #bags{
+        width: 60px;
+    }
+    #badgebg{
+        width: 60px;
+        position: absolute;
+    }
+    .flood{
+        padding-bottom: 130px;
+    }
+    #main-2-head {
+        font-size: 45px;
+    }
+}
